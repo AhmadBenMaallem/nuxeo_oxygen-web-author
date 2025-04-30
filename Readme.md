@@ -109,15 +109,28 @@ Le plugin **WebDAV Connector** permet d’éditer les fichiers distants stockés
 
 ---
 
-## 🧪 Customisation de l’authentification *(POC uniquement)*
+## 🧪 Personnalisation de l’authentification (à des fins de test)
 
 > ❗ **Attention : solution non sécurisée, uniquement pour des tests**
 
-Pour simuler une connexion automatique à Nuxeo, il est possible de modifier le fichier `plugin.js` du plugin WebDAV afin d’intégrer des **données d’authentification statiques**.
+Pour simuler une **connexion automatique à webdav server**, il est possible de modifier le fichier **plugin.js** du plugin WebDAV afin d’intégrer des **données d’authentification statiques**.
 
+Le fichier plugin.js fourni dans ce dépôt a été modifié pour effectuer une **authentification automatique** vers le serveur WebDAV (nuxeo) en utilisant les identifiants : `Login : Administrator ,Password : Administrator`. Afin de l'utiliser, il faut exécuter la commande suivant :
 ```bash
 docker cp plugin.js oxygen-webauthor-container:/usr/local/tomcat/work/Catalina/localhost/oxygen-xml-web-author/plugins/web-author-webdav-plugin-27.1/web/plugin.js
 ```
+
+> ⚠️ Attention : cette approche est destinée uniquement à des fins de démonstration ou de Proof of Concept (POC). Elle ne doit pas être utilisée en production, car elle introduit de sérieux risques de sécurité.
+
+### 📦 Bonnes pratiques : Chargement du JavaScript côté client
+
+Si un plugin nécessite du code JavaScript à exécuter côté client, celui-ci peut être placé dans le **dossier web du plugin**.
+
+- Le Web Author charge automatiquement tous les fichiers .js situés dans le dossier web du plugin.
+
+- Les fichiers sont chargés dans l’ordre lexicographique (par exemple : abc10.js sera chargé avant abc2.js).
+
+Cela permet d’ajouter facilement des comportements personnalisés à l’interface sans modifier le cœur de l'application.
 
 ---
 
