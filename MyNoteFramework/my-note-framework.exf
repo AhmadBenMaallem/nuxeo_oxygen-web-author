@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script xmlns="http://www.oxygenxml.com/ns/framework/extend"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.oxygenxml.com/ns/framework/extend 
+    http://www.oxygenxml.com/ns/framework/extend/frameworkExtensionScript.xsd">
+  <name>My Note Framework</name>
+  <description/>
+  <priority>High</priority>
+
+  <associationRules>
+    <addRule namespace="http://example.com/note" rootElementLocalName="note" fileName="*" publicID="*" javaRuleClass=""
+    attributeLocalName="*" attributeNamespace="*" attributeValue="*"/>
+  </associationRules>
+
+  <documentTemplates>
+    <addEntry path="${frameworkDir}/templates"/>
+  </documentTemplates>
+
+  <classpath>
+    <addEntry path="${framework}/resources"/>
+  </classpath>
+
+  <xmlCatalogs>
+    <addEntry path="${framework}/catalog.xml"/>
+  </xmlCatalogs>
+
+  <author>
+    <css>
+      <addCss path="${framework}/css/main.css"/>
+    </css>
+  </author>-->
+</script>

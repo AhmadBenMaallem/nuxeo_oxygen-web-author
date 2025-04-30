@@ -1,0 +1,4 @@
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <uriSuffix uriSuffix="note.xsd" uri="./schemas/note.xsd"/>
+  <uri name="http://example.com/note" uri="./schemas/note.xsd"/>
+</catalog>

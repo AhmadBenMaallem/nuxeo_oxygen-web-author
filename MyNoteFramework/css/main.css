@@ -1,0 +1,30 @@
+/* Affiche tous les éléments comme blocs */
+* {
+  display: block;
+}
+
+/* Affiche le nom de l'élément avant chaque élément (utile pour le développement) */
+*:before(1001) {
+  content: oxy_name() " ";
+  font-size: 0.75rem;
+  font-family: monospace;
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin-bottom: 2px;
+  display: block;
+}
+
+/* Ajoute un peu d’espace autour des éléments */
+*:not(:empty) {
+  margin: 6px 0;
+  padding: 4px;
+  border-left: 2px solid #ccc;
+}
+
+/* Style personnalisé pour les éléments "to" et "from" */
+to, from {
+  font-weight: bold;
+  color: #0077cc;
+}
