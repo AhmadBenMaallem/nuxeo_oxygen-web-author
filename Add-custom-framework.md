@@ -132,6 +132,8 @@ Ce guide décrit les étapes pour créer et intégrer un **framework personnalis
 
 5. Vous pouvez modifier les fichiers CSS dans ce dossier pour ajuster le rendu et rafraîchir le navigateur.
 
+> 🗂️ Voir l'exemple [📄 My Note Framework](./MyNoteFramework) 
+
 ---
 
 🎉 Votre framework personnalisé est maintenant prêt à être utilisé dans Oxygen Web Author !
