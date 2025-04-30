@@ -119,6 +119,7 @@ Ce guide décrit les étapes pour créer et intégrer un **framework personnalis
 1. Créez une archive ZIP du dossier `MyFramework`.
 
 2. Dans la page d’administration de Web Author, téléversez ce ZIP.
+![alt text](Upload-framework.png)
 
 3. Redémarrer oxygen-web-author 
     ```
