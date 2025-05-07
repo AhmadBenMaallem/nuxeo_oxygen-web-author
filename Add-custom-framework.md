@@ -138,3 +138,13 @@ Ce guide décrit les étapes pour créer et intégrer un **framework personnalis
 ---
 
 🎉 Votre framework personnalisé est maintenant prêt à être utilisé dans Oxygen Web Author !
+
+---
+## 📂 Ajouter une Toolbar Personnalisée dans Oxygen Web Author pour un Framework Custom
+
+Ce guide explique comment configurer une barre d’outils avec des actions personnalisées, comme appliquer du **gras** avec une balise `<B>`, dans un framework personnalisé pour **Oxygen Web Author**.
+
+➡️ Voir la page dédiée : [📄 Add-custom-toolbar](Oxygen_Toolbar_Tutorial.md)
+
+---
+
