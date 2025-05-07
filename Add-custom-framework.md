@@ -135,9 +135,6 @@ Ce guide décrit les étapes pour créer et intégrer un **framework personnalis
 
 > 🗂️ Voir l'exemple [📄 My Note Framework](./MyNoteFramework) 
 
----
-
-🎉 Votre framework personnalisé est maintenant prêt à être utilisé dans Oxygen Web Author !
 
 ---
 ## 📂 Ajouter une Toolbar Personnalisée dans Oxygen Web Author pour un Framework Custom
@@ -147,4 +144,6 @@ Ce guide explique comment configurer une barre d’outils avec des actions perso
 ➡️ Voir la page dédiée : [📄 Add-custom-toolbar](Oxygen_Toolbar_Tutorial.md)
 
 ---
+
+🎉 Votre framework personnalisé est maintenant prêt à être utilisé dans Oxygen Web Author !
 
