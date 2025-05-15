@@ -24,10 +24,9 @@ Exemple d'insertion :
 
 3. Redémarrer Oxygen.
 
-## ⚠️ Dépendances côté schéma (XSD)
+## ⚠️ Prérequis
 
-Pour que le plugin fonctionne correctement, vous devez définir la balise `<color>` dans votre schéma XSD. Exemple minimal :
-
+1- Votre schéma XML (XSD) doit définir l’élément <color> ainsi que son attribut value.
 ```xml
 <xs:element name="color">
   <xs:complexType mixed="true">
@@ -35,5 +34,12 @@ Pour que le plugin fonctionne correctement, vous devez définir la balise `<colo
   </xs:complexType>
 </xs:element>
 ```
+2- Pour que la balise <color> soit rendue visuellement dans Oxygen, ajoutez cette règle CSS dans votre framework :
 
-Assurez-vous que le namespace correspond à celui utilisé dans vos documents (`http://www.grouperf.com`, par exemple).
+```css
+color {
+  color: attr(value);
+}
+```
+
+Assurez-vous que le namespace correspond à celui utilisé dans vos documents (`http://www.groupeXY.com`, par exemple).
