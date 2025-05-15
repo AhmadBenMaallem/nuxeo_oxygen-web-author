@@ -120,7 +120,14 @@ Le fichier plugin.js fourni dans ce dépôt a été modifié pour effectuer une 
 docker cp plugin.js oxygen-webauthor-container:/usr/local/tomcat/work/Catalina/localhost/oxygen-xml-web-author/plugins/web-author-webdav-plugin-27.1/web/plugin.js
 ```
 
-> ⚠️ Attention : cette approche est destinée uniquement à des fins de démonstration ou de Proof of Concept (POC). Elle ne doit pas être utilisée en production, car elle introduit de sérieux risques de sécurité.
+> ⚠️ Attention : 
+>
+>- cette approche est destinée uniquement à des fins de démonstration ou de Proof of Concept (POC). Elle ne doit pas être utilisée en production, car elle introduit de sérieux risques de sécurité.
+>- Si vous gérez un type de document autre que File, vous devez suivre les étapes suivantes pour garantir le bon fonctionnement avec Oxygen :
+>   - Ajouter la facet **UITypesLocalConfiguration** au **dossier parent** de vos documents.
+>   - Définir la métadonnée **uitypesconf:defaultType** avec le nom de votre type personnalisé (par exemple **MyCustomType**).
+>
+>   Cela permet à Oxygen de savoir quel type utiliser par défaut lors de la création ou de la modification de documents XML via l’intégration Nuxeo.
 
 ### 📦 Bonnes pratiques : Chargement du JavaScript côté client
 
