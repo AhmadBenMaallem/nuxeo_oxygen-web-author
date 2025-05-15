@@ -142,3 +142,10 @@ Vous pouvez ajouter un framework XML propre à votre projet.
 
 ---
 
+## 📦 Plugin "Color Tag Insertion" pour Oxygen XML
+
+Ce dépôt contient un plugin JavaScript pour Oxygen Web Author permettant d'insérer facilement une balise `<color>` avec un attribut `value` correspondant à une couleur choisie via une palette graphique.
+
+🔗 [Accéder au plugin](./insert-color-tag)
+
+
